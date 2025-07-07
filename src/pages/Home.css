@@ -1,0 +1,152 @@
+:root {
+  --primary-color: #1e3c72;
+  --secondary-color: #2a5298;
+  --light-color: #f8f9fa;
+  --text-light: #ffffff;
+  --text-dark: #333;
+  --highlight-color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #facc15, #f59e0b);
+
+  padding: 5rem 2rem;
+  border-radius: 40px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 3rem 2rem;
+}
+
+
+
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  background-color: #1e293b; /* kontras terhadap background kuning */
+  transition: all 0.3s ease;
+}
+
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: var(--text-light);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+/* Skills Section */
+.skills {
+  padding: 5rem 1rem;
+  background-color: var(--light-color);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: relative;
+  color: #111;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.4rem;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 5px;
+  background-color: #fbbf24; /* kuning keemasan */
+  border-radius: 9999px;
+}
+
+
+/* Grid Layout for Skill Cards */
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Individual Skill Card */
+.skill-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  color:#fbbf24;
+  margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.5;
+}

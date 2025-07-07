@@ -1,0 +1,70 @@
+/* Navbar Layout */
+.navbar {
+  background-color: #0e0e0e;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Style with Subtle Glow Animation */
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  animation: glowFade 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowFade {
+  0% {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
+    opacity: 0.9;
+  }
+  100% {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.7);
+    opacity: 1;
+  }
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #80bfff; /* light blue highlight on hover */
+}
+
+/* Responsive (optional) */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+  }
+}
